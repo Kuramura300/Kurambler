@@ -36,12 +36,18 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtboxScrambled = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnUnscramble = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtboxScrambled = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBoxScramblified = new System.Windows.Forms.TextBox();
+            this.lstToScramble = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnImportFile
@@ -88,7 +94,7 @@
             this.groupBox1.Controls.Add(this.lstWords);
             this.groupBox1.Location = new System.Drawing.Point(447, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(249, 369);
+            this.groupBox1.Size = new System.Drawing.Size(249, 374);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Complete Word List";
@@ -110,28 +116,12 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.txtboxScrambled);
             this.groupBox3.Controls.Add(this.lstResults);
-            this.groupBox3.Location = new System.Drawing.Point(12, 243);
+            this.groupBox3.Location = new System.Drawing.Point(12, 248);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(429, 138);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Unscrambler";
-            // 
-            // txtboxScrambled
-            // 
-            this.txtboxScrambled.Location = new System.Drawing.Point(10, 61);
-            this.txtboxScrambled.Name = "txtboxScrambled";
-            this.txtboxScrambled.Size = new System.Drawing.Size(171, 27);
-            this.txtboxScrambled.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 19);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Scrambled text below!";
             // 
             // btnUnscramble
             // 
@@ -143,6 +133,71 @@
             this.btnUnscramble.UseVisualStyleBackColor = true;
             this.btnUnscramble.Click += new System.EventHandler(this.BtnUnscramble_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 19);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Scrambled text below!";
+            // 
+            // txtboxScrambled
+            // 
+            this.txtboxScrambled.Location = new System.Drawing.Point(10, 61);
+            this.txtboxScrambled.Name = "txtboxScrambled";
+            this.txtboxScrambled.Size = new System.Drawing.Size(171, 27);
+            this.txtboxScrambled.TabIndex = 4;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.txtBoxScramblified);
+            this.groupBox4.Controls.Add(this.lstToScramble);
+            this.groupBox4.Location = new System.Drawing.Point(12, 104);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(429, 138);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Scrambler";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 38);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Select a word to scramble\r\nand it\'ll appear below!";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtBoxScramblified
+            // 
+            this.txtBoxScramblified.Location = new System.Drawing.Point(10, 77);
+            this.txtBoxScramblified.Name = "txtBoxScramblified";
+            this.txtBoxScramblified.Size = new System.Drawing.Size(171, 27);
+            this.txtBoxScramblified.TabIndex = 4;
+            // 
+            // lstToScramble
+            // 
+            this.lstToScramble.FormattingEnabled = true;
+            this.lstToScramble.ItemHeight = 19;
+            this.lstToScramble.Location = new System.Drawing.Point(187, 14);
+            this.lstToScramble.Name = "lstToScramble";
+            this.lstToScramble.Size = new System.Drawing.Size(236, 118);
+            this.lstToScramble.TabIndex = 3;
+            this.lstToScramble.SelectedIndexChanged += new System.EventHandler(this.LstToScramble_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 32F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(173, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(262, 76);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Kurambler";
+            // 
             // UI
             // 
             this.AcceptButton = this.btnUnscramble;
@@ -151,7 +206,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BackgroundImage = global::Kurambler.Properties.Resources.pinkGradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(708, 387);
+            this.ClientSize = new System.Drawing.Size(708, 394);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -169,7 +226,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -185,6 +245,11 @@
         private System.Windows.Forms.Button btnUnscramble;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtboxScrambled;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBoxScramblified;
+        private System.Windows.Forms.ListBox lstToScramble;
+        private System.Windows.Forms.Label label3;
     }
 }
 
