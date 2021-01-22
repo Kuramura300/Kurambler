@@ -1,4 +1,2 @@
 # Kurambler
- Word scrambler/unscrambler that I made because I was bored but also for the purpose of solving some pokemon name scrambling with ease
-
-You only need to download Kurambler.exe to run the program
+ Word scrambler/unscrambler is a program developed for the purpose of unscrambling/scrambling words that are not part of the dictionary (something that only unscramblers for games like scrabble couldn't cover). You are able to import a text file of words (separated by ", ") to use.
